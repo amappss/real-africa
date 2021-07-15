@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CoverImageView: View {
-    var images: [CoverImage]
+    let images: [CoverImage]
     
     var body: some View {
         TabView{

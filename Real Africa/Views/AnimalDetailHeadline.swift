@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct AnimalDetailHeadline: View {
-    var title: String
-    var imageName: String
+    let title: String
+    let imageName: String
     var body: some View {
         HStack {
             Image(systemName: imageName)

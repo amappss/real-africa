@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct BrowseView: View {
-    let coverImages: [CoverImage] = Bundle.main.decode(fromFile: "covers.json")
-    let animals: [Animal] = Bundle.main.decode(fromFile: "animals.json")
+    let coverImages = COVER_IMAGES
+    let animals = ANIMALS
     
     var body: some View {
         NavigationView {

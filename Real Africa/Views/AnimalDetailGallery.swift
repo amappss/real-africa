@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AnimalDetailGallery: View {
-    var animal: Animal
+    let animal: Animal
     var body: some View {
         ScrollView(.horizontal,showsIndicators:false) {
             HStack(spacing:10){

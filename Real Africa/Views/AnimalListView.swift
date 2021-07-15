@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AnimalListView: View {
-    var animal: Animal
+    let animal: Animal
     var body: some View {
         HStack(spacing:16) {
             Image(animal.image)

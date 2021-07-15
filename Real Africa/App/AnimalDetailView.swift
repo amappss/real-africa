@@ -30,8 +30,36 @@ struct AnimalDetailView: View {
                     .foregroundColor(.accentColor)
                     .multilineTextAlignment(.leading)
                     .padding(.horizontal)
-                AnimalDetailHeadline(title: "Wildness in Pictures",imageName: "photo.on.rectangle.angled")
-                AnimalDetailGallery(animal: animal)
+                Group{
+                    AnimalDetailHeadline(title: "Wildness in Pictures",imageName: "photo.on.rectangle.angled")
+                    
+                    AnimalDetailGallery(animal: animal)
+                    
+                }
+                Group{
+                    AnimalDetailHeadline(title: "Did you know?", imageName: "questionmark.circle")
+                    AnimalDetailFact(animal: animal)
+                    
+                }
+                Group{
+                    AnimalDetailHeadline(title: "All about \(animal.name)", imageName: "info.circle")
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                        .padding(.horizontal,2)
+                    
+                }
+                Group{
+                    AnimalDetailHeadline(title: "National Parks", imageName: "map")
+                    AnimalDetailMap()
+                }
+                Group{
+                    AnimalDetailHeadline(title: "Learn More", imageName: "books.vertical")
+                    ExternalLinkView(animal: animal)
+                    
+                }
+                
+                
             }
         }
         .navigationBarTitle("Learn about \(animal.name)",displayMode: .inline)
