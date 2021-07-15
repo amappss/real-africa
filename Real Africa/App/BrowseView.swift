@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct BrowseView: View {
+    let coverImages = Bundle.main.decode(fromFile: "covers.json")
+    
     var body: some View {
-        Text("Browse")
-            .padding()
+        NavigationView {
+            List {
+                CoverImageView(images: coverImages)
+                    .frame(height:300)
+                    .listRowInsets(.none)
+            }
+            .navigationBarTitle("Real Africa")
+        }
     }
 }
 
