@@ -13,7 +13,9 @@ struct VideoView: View {
         NavigationView {
             List {
                 ForEach(videos) { video in
-                    VideoRow(video: video)
+                    NavigationLink(destination:VideoDetail(videoName: video.id, title: video.name)){
+                       VideoRow(video: video)
+                    }
                 }
             }
             .listStyle(InsetGroupedListStyle())
