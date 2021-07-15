@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CoverImage: Decodable,Identifiable {
+struct CoverImage: Codable,Identifiable {
     var id: Int
     var name: String
 }
