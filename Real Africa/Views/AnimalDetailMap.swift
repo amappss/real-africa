@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 struct AnimalDetailMap: View {
     
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 6.600284, longitude: 16.4377599), span: MKCoordinateSpan(latitudeDelta: 60.0, longitudeDelta: 60.0))
+    @State private var region = AFRICA_REGION
     
     var body: some View {
         Map(coordinateRegion: $region)

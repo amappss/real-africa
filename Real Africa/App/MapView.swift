@@ -6,10 +6,19 @@
 //
 
 import SwiftUI
-
+import MapKit
 struct MapView: View {
+    
+    @State private var region = AFRICA_REGION
     var body: some View {
-        Text("Map")
+        Map(coordinateRegion: $region, annotationItems: LOCATIONS) { location in
+            MapAnnotation(coordinate:location.coordinate){
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width:32,height:32)
+            }
+        }
     }
 }
 
