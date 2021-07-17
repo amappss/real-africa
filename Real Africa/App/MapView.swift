@@ -13,10 +13,7 @@ struct MapView: View {
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: LOCATIONS) { location in
             MapAnnotation(coordinate:location.coordinate){
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width:32,height:32)
+                AnnotationView(location: location)
             }
         }
     }
