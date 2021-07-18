@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B27065326A2F2AD00E658E0 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27065226A2F2AD00E658E0 /* AnnotationView.swift */; };
 		3B27065526A3020E00E658E0 /* GalleryAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27065426A3020E00E658E0 /* GalleryAnimationView.swift */; };
+		3B27065726A3218700E658E0 /* BrowseViewGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27065626A3218700E658E0 /* BrowseViewGrid.swift */; };
 		3B984B6726A00AE600F54411 /* Real_AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B984B6626A00AE600F54411 /* Real_AfricaApp.swift */; };
 		3B984B6926A00AE600F54411 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B984B6826A00AE600F54411 /* BrowseView.swift */; };
 		3B984B6B26A00AE900F54411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B984B6A26A00AE900F54411 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		3B27065226A2F2AD00E658E0 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		3B27065426A3020E00E658E0 /* GalleryAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryAnimationView.swift; sourceTree = "<group>"; };
+		3B27065626A3218700E658E0 /* BrowseViewGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewGrid.swift; sourceTree = "<group>"; };
 		3B984B6326A00AE600F54411 /* Real Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Real Africa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B984B6626A00AE600F54411 /* Real_AfricaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Real_AfricaApp.swift; sourceTree = "<group>"; };
 		3B984B6826A00AE600F54411 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				3B984BBA26A063A200F54411 /* VideoRow.swift */,
 				3B27065226A2F2AD00E658E0 /* AnnotationView.swift */,
 				3B27065426A3020E00E658E0 /* GalleryAnimationView.swift */,
+				3B27065626A3218700E658E0 /* BrowseViewGrid.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				3B984BB926A0570000F54411 /* ExternalLinkView.swift in Sources */,
 				3B984B8B26A02F9D00F54411 /* CoverImageView.swift in Sources */,
 				3B27065326A2F2AD00E658E0 /* AnnotationView.swift in Sources */,
+				3B27065726A3218700E658E0 /* BrowseViewGrid.swift in Sources */,
 				3B984B7C26A00E3200F54411 /* MapView.swift in Sources */,
 				3B984BC726A1B05600F54411 /* Location.swift in Sources */,
 				3B984B8826A02D8C00F54411 /* CoverImage.swift in Sources */,
