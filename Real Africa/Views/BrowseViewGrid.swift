@@ -18,11 +18,12 @@ struct BrowseViewGrid: View {
         ScrollView {
             LazyVGrid(columns:getCurrentGridLayout(),spacing:10) {
                 ForEach(ANIMALS) { animal in
-                    Image(animal.image)
-                        .resizable()
-                        .scaledToFit()
-                        .cornerRadius(12)
-                        
+                    NavigationLink(destination:AnimalDetailView(animal: animal)){
+                        Image(animal.image)
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(12)
+                    }
                 }
         }
         }
