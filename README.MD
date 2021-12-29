@@ -2,7 +2,7 @@
 
 ## About the app
 
-An SwiftUI project that includes mapping, video streaming photo gallery, etc
+A SwiftUI project that includes mapping, video streaming photo gallery, etc
 
 ## Main Fnctionality
 
